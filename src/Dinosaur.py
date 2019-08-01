@@ -87,7 +87,9 @@ class Game():
 			dinosaur.rect.x = 50
 			dinosaur.rect.y = 300
 			self.speed = 10
-
+			
+			return 0
+		
 	def main(self, screen):
 		clock = pygame.time.Clock()
 		#Sprite Groups
