@@ -86,8 +86,7 @@ class Game():
 			self.cacti = pygame.sprite.Group()
 			dinosaur.rect.x = 50
 			dinosaur.rect.y = 300
-
-			return 0
+			self.speed = 10
 
 	def main(self, screen):
 		clock = pygame.time.Clock()
