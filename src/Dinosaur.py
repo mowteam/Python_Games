@@ -38,7 +38,8 @@ class Cactus(pygame.sprite.Sprite):
 	def __init__(self, width, height, speed):
 
 		pygame.sprite.Sprite.__init__(self)
-		self.image = pygame.image.load("cactus.jpeg")
+		folder = os.path.dirname(os.path.realpath(__file__))
+		self.image = pygame.image.load(os.path.join(folder, "cactus.jpeg"))
 		self.image = pygame.transform.scale(self.image, (width, height))
 		self.rect = pygame.Rect(self.image.get_rect())
 
