@@ -2,6 +2,8 @@ import pygame, math, sys
 from pygame.locals import *
 import random
 
+import os
+
 SCREEN_X = 1000
 SCREEN_Y = 500
 
@@ -9,7 +11,8 @@ class Dinosaur(pygame.sprite.Sprite):
 	def __init__(self):
 
 		pygame.sprite.Sprite.__init__(self)
-		self.image = pygame.image.load("dinosaur.jpeg")
+		folder = os.path.dirname(os.path.realpath(__file__))
+		self.image = pygame.image.load(os.path.join(folder, "dinosaur.jpeg"))
 		self.image = pygame.transform.scale(self.image, (50, 50))
 		self.rect = pygame.Rect(self.image.get_rect())
 
