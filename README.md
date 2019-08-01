@@ -7,4 +7,4 @@ $ git clone https://github.com/mowteam/Python_Games
 
 $ pip install pygame # if you need
 
-$ python Python_Games/src/Dinosaur.py
+$ python3 Python_Games/src/Dinosaur.py
